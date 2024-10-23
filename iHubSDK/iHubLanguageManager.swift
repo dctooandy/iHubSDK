@@ -9,8 +9,6 @@ import UIKit
 public class iHubLanguageManager {
     public static let shared = iHubLanguageManager()
     public var onUpdateLanguageFlow: (() -> Void)?
-    private init() {}
-    
     public var currentLanguage: String {
         get {
             return UserDefaults.standard.string(forKey: "AppLanguage") ?? Locale.current.languageCode ?? "en"
@@ -20,6 +18,15 @@ public class iHubLanguageManager {
             updateLanguage(to: newValue)
         }
     }
+    
+    public static func version() -> String {
+        guard let version = Bundle.mySDK.infoDictionary?["CFBundleShortVersionString"] as? String else {
+            return "Unknown"
+        }
+        return version
+    }
+    
+    private init() {}
     
     func updateLanguage(to languageCode: String) {
             // 1. 更新 UserDefaults
@@ -41,6 +48,9 @@ public class iHubLanguageManager {
 }
 
 extension Bundle {
+    static var mySDK: Bundle {
+        return Bundle(for: iHubLanguageManager.self)
+    }
     private static var bundles: [String: Bundle] = [:]
     
     public class func setLanguage(_ language: String) {
