@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "iHubSDK"
-  spec.version      = "0.0.1"
+  spec.version      = "1.0"
   spec.summary      = "iHubSDK 是專為Ihub設計的SDK"
 
   # This description is used to generate tags and improve search results.
@@ -68,7 +68,7 @@ Pod::Spec.new do |spec|
 
   #  When using multiple platforms
   spec.ios.deployment_target = "13.0"
-  spec.osx.deployment_target = "10.13"
+  # spec.osx.deployment_target = "10.13"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
   # spec.visionos.deployment_target = "1.0"
