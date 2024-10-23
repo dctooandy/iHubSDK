@@ -31,7 +31,7 @@ public class iHubLanguageManager {
       
             // 3. 發送通知
         NotificationCenter.default.post(name: Notification.Name("LanguageChanged"), object: nil)
-        
+        print("SDK設定Language")
             // 4. 重新設置根視圖控制器以應用更改
         DispatchQueue.main.async {
             self.onUpdateLanguageFlow?()
