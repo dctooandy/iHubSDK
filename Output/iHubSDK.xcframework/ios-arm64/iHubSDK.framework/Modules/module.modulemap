@@ -1,0 +1,6 @@
+framework module iHubSDK {
+  umbrella header "iHubSDK.h"
+  export *
+
+  module * { export * }
+}

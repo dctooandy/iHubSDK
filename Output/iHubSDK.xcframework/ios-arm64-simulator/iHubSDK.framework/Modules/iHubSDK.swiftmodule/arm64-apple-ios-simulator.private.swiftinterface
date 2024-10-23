@@ -1,0 +1,21 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target arm64-apple-ios18.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name iHubSDK
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_exported import iHubSDK
+@_hasMissingDesignatedInitializers public class iHubLanguageManager {
+  public static let shared: iHubSDK.iHubLanguageManager
+  public var onUpdateLanguageFlow: (() -> Swift.Void)?
+  public var currentLanguage: Swift.String {
+    get
+    set
+  }
+  @objc deinit
+}
+extension Foundation.Bundle {
+  public class func setLanguage(_ language: Swift.String)
+}
