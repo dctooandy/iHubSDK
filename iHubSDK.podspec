@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "iHubSDK"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.3"
   spec.summary      = "iHubSDK 是專為Ihub設計的SDK"
 
   # This description is used to generate tags and improve search results.
