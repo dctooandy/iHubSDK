@@ -293,6 +293,29 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "version",
+            "printedName": "version()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7iHubSDK01iA15LanguageManagerC7versionSSyFZ",
+            "mangledName": "$s7iHubSDK01iA15LanguageManagerC7versionSSyFZ",
+            "moduleName": "iHubSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -450,9 +473,16 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/rd-sw18\/Documents\/001Company\/iHubSDK\/iHubSDK\/iHubLanguageManager.swift",
+      "filePath": "\/Users\/rd-sw18\/Documents\/002Personal\/iHubSDK\/iHubSDK\/Extensions\/Extension_String.swift",
+      "kind": "StringLiteral",
+      "offset": 151,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/rd-sw18\/Documents\/002Personal\/iHubSDK\/iHubSDK\/iHubLanguageManager.swift",
       "kind": "Dictionary",
-      "offset": 1302,
+      "offset": 1637,
       "length": 3,
       "value": "[]"
     }
