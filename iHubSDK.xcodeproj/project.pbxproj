@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -17,11 +17,25 @@
 				1468A5202CC8911C0095A8FA /* PBXTargetDependency */,
 			);
 			name = iHubSDKAggregate;
-			packageProductDependencies = (
-			);
 			productName = iHubSDKAggregate;
 		};
 /* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		14647BCB2CCA289100A7124A /* videoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14647BC52CCA289100A7124A /* videoSDK.framework */; };
+		14647BCC2CCA289100A7124A /* Extension_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14647BC22CCA289100A7124A /* Extension_String.swift */; };
+		14647BCD2CCA289100A7124A /* Extension+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14647BC32CCA289100A7124A /* Extension+Bundle.swift */; };
+		14647BCE2CCA289100A7124A /* iHubLanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14647BC72CCA289100A7124A /* iHubLanguageManager.swift */; };
+		14647BCF2CCA289100A7124A /* iHubSDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = 14647BC92CCA289100A7124A /* iHubSDK.docc */; };
+		14647BD02CCA289100A7124A /* iHubSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 14647BC82CCA289100A7124A /* iHubSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14647BD72CCA2C0A00A7124A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 14647BD52CCA2BDE00A7124A /* libz.tbd */; };
+		14647BD82CCA2C1900A7124A /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 14647BD32CCA2BB300A7124A /* libbz2.tbd */; };
+		14647BD92CCA2C2300A7124A /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 14647BD42CCA2BC600A7124A /* libiconv.tbd */; };
+		14647BDA2CCA2C2E00A7124A /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 14647BD62CCA2BE900A7124A /* libz.1.2.5.tbd */; };
+		14647BDC2CCA2CBB00A7124A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14647BDB2CCA2CBB00A7124A /* SystemConfiguration.framework */; };
+		14647BDE2CCA2CC200A7124A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14647BDD2CCA2CC200A7124A /* MobileCoreServices.framework */; };
+		2912E7C0B29DCB9B34E4A38E /* Pods_iHubSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6ECF2354A54364FFF65730 /* Pods_iHubSDK.framework */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		1468A51F2CC8911C0095A8FA /* PBXContainerItemProxy */ = {
@@ -34,46 +48,79 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14647BC22CCA289100A7124A /* Extension_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_String.swift; sourceTree = "<group>"; };
+		14647BC32CCA289100A7124A /* Extension+Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Bundle.swift"; sourceTree = "<group>"; };
+		14647BC52CCA289100A7124A /* videoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = videoSDK.framework; sourceTree = "<group>"; };
+		14647BC72CCA289100A7124A /* iHubLanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iHubLanguageManager.swift; sourceTree = "<group>"; };
+		14647BC82CCA289100A7124A /* iHubSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iHubSDK.h; sourceTree = "<group>"; };
+		14647BC92CCA289100A7124A /* iHubSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = iHubSDK.docc; sourceTree = "<group>"; };
+		14647BD32CCA2BB300A7124A /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib/libbz2.tbd; sourceTree = DEVELOPER_DIR; };
+		14647BD42CCA2BC600A7124A /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib/libiconv.tbd; sourceTree = DEVELOPER_DIR; };
+		14647BD52CCA2BDE00A7124A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+		14647BD62CCA2BE900A7124A /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib/libz.1.2.5.tbd; sourceTree = DEVELOPER_DIR; };
+		14647BDB2CCA2CBB00A7124A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		14647BDD2CCA2CC200A7124A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/iOSSupport/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		1468A4F82CC87FE10095A8FA /* iHubSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iHubSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A6ECF2354A54364FFF65730 /* Pods_iHubSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iHubSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30DA657D1102B5AFE6D9BB05 /* Pods-iHubSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHubSDK.debug.xcconfig"; path = "Target Support Files/Pods-iHubSDK/Pods-iHubSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		9F32743042B97F6E8E6BE346 /* Pods-iHubSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHubSDK.release.xcconfig"; path = "Target Support Files/Pods-iHubSDK/Pods-iHubSDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		1468A4FF2CC87FE10095A8FA /* Exceptions for "iHubSDK" folder in "iHubSDK" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			publicHeaders = (
-				iHubSDK.h,
-			);
-			target = 1468A4F72CC87FE10095A8FA /* iHubSDK */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		1468A4FA2CC87FE10095A8FA /* iHubSDK */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				1468A4FF2CC87FE10095A8FA /* Exceptions for "iHubSDK" folder in "iHubSDK" target */,
-			);
-			path = iHubSDK;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1468A4F52CC87FE10095A8FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14647BDE2CCA2CC200A7124A /* MobileCoreServices.framework in Frameworks */,
+				14647BDC2CCA2CBB00A7124A /* SystemConfiguration.framework in Frameworks */,
+				14647BDA2CCA2C2E00A7124A /* libz.1.2.5.tbd in Frameworks */,
+				14647BD92CCA2C2300A7124A /* libiconv.tbd in Frameworks */,
+				14647BD82CCA2C1900A7124A /* libbz2.tbd in Frameworks */,
+				14647BD72CCA2C0A00A7124A /* libz.tbd in Frameworks */,
+				14647BCB2CCA289100A7124A /* videoSDK.framework in Frameworks */,
+				2912E7C0B29DCB9B34E4A38E /* Pods_iHubSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14647BC42CCA289100A7124A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				14647BC22CCA289100A7124A /* Extension_String.swift */,
+				14647BC32CCA289100A7124A /* Extension+Bundle.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		14647BC62CCA289100A7124A /* SDKs */ = {
+			isa = PBXGroup;
+			children = (
+				14647BC52CCA289100A7124A /* videoSDK.framework */,
+			);
+			path = SDKs;
+			sourceTree = "<group>";
+		};
+		14647BCA2CCA289100A7124A /* iHubSDK */ = {
+			isa = PBXGroup;
+			children = (
+				14647BC42CCA289100A7124A /* Extensions */,
+				14647BC62CCA289100A7124A /* SDKs */,
+				14647BC72CCA289100A7124A /* iHubLanguageManager.swift */,
+				14647BC82CCA289100A7124A /* iHubSDK.h */,
+				14647BC92CCA289100A7124A /* iHubSDK.docc */,
+			);
+			path = iHubSDK;
+			sourceTree = "<group>";
+		};
 		1468A4EE2CC87FE10095A8FA = {
 			isa = PBXGroup;
 			children = (
-				1468A4FA2CC87FE10095A8FA /* iHubSDK */,
+				14647BCA2CCA289100A7124A /* iHubSDK */,
 				1468A4F92CC87FE10095A8FA /* Products */,
+				ECF86B1DA6C29720CE9F1BBD /* Pods */,
+				C0169AF76451C5F6B28352A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +132,29 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C0169AF76451C5F6B28352A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14647BDD2CCA2CC200A7124A /* MobileCoreServices.framework */,
+				14647BDB2CCA2CBB00A7124A /* SystemConfiguration.framework */,
+				14647BD62CCA2BE900A7124A /* libz.1.2.5.tbd */,
+				14647BD52CCA2BDE00A7124A /* libz.tbd */,
+				14647BD42CCA2BC600A7124A /* libiconv.tbd */,
+				14647BD32CCA2BB300A7124A /* libbz2.tbd */,
+				1A6ECF2354A54364FFF65730 /* Pods_iHubSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECF86B1DA6C29720CE9F1BBD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30DA657D1102B5AFE6D9BB05 /* Pods-iHubSDK.debug.xcconfig */,
+				9F32743042B97F6E8E6BE346 /* Pods-iHubSDK.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -92,6 +162,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14647BD02CCA289100A7124A /* iHubSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +173,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1468A5002CC87FE10095A8FA /* Build configuration list for PBXNativeTarget "iHubSDK" */;
 			buildPhases = (
+				3F5FAC55420C99C72CA30B28 /* [CP] Check Pods Manifest.lock */,
 				1468A4F32CC87FE10095A8FA /* Headers */,
 				1468A4F42CC87FE10095A8FA /* Sources */,
 				1468A4F52CC87FE10095A8FA /* Frameworks */,
@@ -111,12 +183,7 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				1468A4FA2CC87FE10095A8FA /* iHubSDK */,
-			);
 			name = iHubSDK;
-			packageProductDependencies = (
-			);
 			productName = iHubSDK;
 			productReference = 1468A4F82CC87FE10095A8FA /* iHubSDK.framework */;
 			productType = "com.apple.product-type.framework";
@@ -139,6 +206,7 @@
 				};
 			};
 			buildConfigurationList = 1468A4F22CC87FE10095A8FA /* Build configuration list for PBXProject "iHubSDK" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -146,8 +214,6 @@
 				Base,
 			);
 			mainGroup = 1468A4EE2CC87FE10095A8FA;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 1468A4F92CC87FE10095A8FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -186,6 +252,28 @@
 			shellPath = /bin/sh;
 			shellScript = "# 設置變量\nFRAMEWORK_NAME=\"iHubSDK\"\nSIMULATOR_ARCHIVE_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework\"\nDEVICE_ARCHIVE_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\"\nOUTPUT_PATH=\"./Output/${FRAMEWORK_NAME}.xcframework\"\n\n# 創建 XCFramework\nxcodebuild -create-xcframework \\\n    -framework \"${SIMULATOR_ARCHIVE_PATH}\" \\\n    -framework \"${DEVICE_ARCHIVE_PATH}\" \\\n    -output \"${OUTPUT_PATH}\"\n";
 		};
+		3F5FAC55420C99C72CA30B28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iHubSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -193,6 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14647BCC2CCA289100A7124A /* Extension_String.swift in Sources */,
+				14647BCD2CCA289100A7124A /* Extension+Bundle.swift in Sources */,
+				14647BCE2CCA289100A7124A /* iHubLanguageManager.swift in Sources */,
+				14647BCF2CCA289100A7124A /* iHubSDK.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +301,7 @@
 /* Begin XCBuildConfiguration section */
 		1468A5012CC87FE10095A8FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30DA657D1102B5AFE6D9BB05 /* Pods-iHubSDK.debug.xcconfig */;
 			buildSettings = {
 				BITCODE_GENRATION_MODE = bitcode;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
@@ -243,6 +336,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -250,6 +344,7 @@
 		};
 		1468A5022CC87FE10095A8FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F32743042B97F6E8E6BE346 /* Pods-iHubSDK.release.xcconfig */;
 			buildSettings = {
 				BITCODE_GENRATION_MODE = bitcode;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
@@ -284,6 +379,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
