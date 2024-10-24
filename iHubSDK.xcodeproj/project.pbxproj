@@ -24,7 +24,6 @@
 /* Begin PBXBuildFile section */
 		14647BCB2CCA289100A7124A /* videoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14647BC52CCA289100A7124A /* videoSDK.framework */; };
 		14647BCC2CCA289100A7124A /* Extension_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14647BC22CCA289100A7124A /* Extension_String.swift */; };
-		14647BCD2CCA289100A7124A /* Extension+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14647BC32CCA289100A7124A /* Extension+Bundle.swift */; };
 		14647BCE2CCA289100A7124A /* iHubLanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14647BC72CCA289100A7124A /* iHubLanguageManager.swift */; };
 		14647BCF2CCA289100A7124A /* iHubSDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = 14647BC92CCA289100A7124A /* iHubSDK.docc */; };
 		14647BD02CCA289100A7124A /* iHubSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 14647BC82CCA289100A7124A /* iHubSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -49,7 +48,6 @@
 
 /* Begin PBXFileReference section */
 		14647BC22CCA289100A7124A /* Extension_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_String.swift; sourceTree = "<group>"; };
-		14647BC32CCA289100A7124A /* Extension+Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Bundle.swift"; sourceTree = "<group>"; };
 		14647BC52CCA289100A7124A /* videoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = videoSDK.framework; sourceTree = "<group>"; };
 		14647BC72CCA289100A7124A /* iHubLanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iHubLanguageManager.swift; sourceTree = "<group>"; };
 		14647BC82CCA289100A7124A /* iHubSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iHubSDK.h; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				14647BC22CCA289100A7124A /* Extension_String.swift */,
-				14647BC32CCA289100A7124A /* Extension+Bundle.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -282,7 +279,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				14647BCC2CCA289100A7124A /* Extension_String.swift in Sources */,
-				14647BCD2CCA289100A7124A /* Extension+Bundle.swift in Sources */,
 				14647BCE2CCA289100A7124A /* iHubLanguageManager.swift in Sources */,
 				14647BCF2CCA289100A7124A /* iHubSDK.docc in Sources */,
 			);
