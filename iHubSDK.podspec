@@ -29,8 +29,6 @@ Pod::Spec.new do |spec|
   spec.dependency "RxSwift"
   spec.dependency "RxCocoa"
   spec.dependency "RxDataSources"
-  spec.dependency "RealmSwift", '~> 10.44.0'
-  spec.dependency "RxRealm"
   spec.dependency "RxAlamofire"
   spec.dependency "RxGesture"
   spec.dependency "RxUIAlert"
