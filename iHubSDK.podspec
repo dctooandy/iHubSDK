@@ -20,7 +20,12 @@ Pod::Spec.new do |spec|
   spec.source_files  = "iHubSDK/*.{h,swift}"
   spec.exclude_files = "Classes/Exclude"
 
-  
+  spec.prepare_command = <<-CMD
+    mkdir -p ./iHubSDK/Frameworks/
+    cp -R ./iHubSDK/SDKs/videoSDK.framework ./iHubSDK/Frameworks/
+  CMD
+
+  spec.vendored_frameworks = "iHubSDK/Frameworks/videoSDK.framework"
 
   # spec.requires_arc = true
 
