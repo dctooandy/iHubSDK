@@ -7,16 +7,16 @@
 import RealmSwift
 
 class CameraObject: Object {
-    @objc dynamic var key: String = ""
-    @objc dynamic var type: String  = ""
-    @objc dynamic var ip: String = ""
-    @objc dynamic var port: String = ""
-    @objc dynamic var titleName: String = ""
-    @objc dynamic var username: String = ""
-    @objc dynamic var password: String = ""
-    @objc dynamic var location: String = ""
-    @objc dynamic var channel: String = ""
-    @objc dynamic var bindGarageGroup: String = ""
+    @objc dynamic public var key: String = ""
+    @objc dynamic public var type: String  = ""
+    @objc dynamic public var ip: String = ""
+    @objc dynamic public var port: String = ""
+    @objc dynamic public var titleName: String = ""
+    @objc dynamic public var username: String = ""
+    @objc dynamic public var password: String = ""
+    @objc dynamic public var location: String = ""
+    @objc dynamic public var channel: String = ""
+    @objc dynamic public var bindGarageGroup: String = ""
     
     override class func primaryKey() -> String? {
         return "key"

@@ -18,7 +18,7 @@ public enum ConnectCameraErrors: Codable {
     case connectionPortMappingWrror(NSInteger)
     case defaultError(NSInteger)
     
-    var title: String {
+    public var title: String {
         switch self {
         case .notInitializing(let index):
             return "\(index)" + "此裝置離線中，\n是否仍要儲存？".localized()

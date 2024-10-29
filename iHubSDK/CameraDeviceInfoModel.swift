@@ -7,17 +7,17 @@
 
 import Foundation
 public struct CameraDeviceInfoModel {
-    var user: String = ""
-    var p2pAccount: String = ""
-    var isHttps: String = ""
-    var p2pMappingIndex: String = ""
-    var p2pPassword: String = ""
-    var p2pSid: String = ""
-    var port: String = ""
-    var p2pUid: String = ""
-    var hostAddress: String = ""
-    var passwd: String = ""
-    var name: String = ""
+    public var user: String = ""
+    public var p2pAccount: String = ""
+    public var isHttps: String = ""
+    public var p2pMappingIndex: String = ""
+    public var p2pPassword: String = ""
+    public var p2pSid: String = ""
+    public var port: String = ""
+    public var p2pUid: String = ""
+    public var hostAddress: String = ""
+    public var passwd: String = ""
+    public var name: String = ""
     
     init(user: String, p2pAccount: String, isHttps: String, p2pMappingIndex: String, p2pPassword: String, p2pSid: String, port: String, p2pUid: String, hostAddress: String, passwd: String, name: String) {
         self.user = user

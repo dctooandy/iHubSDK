@@ -5,16 +5,16 @@
 //  Created by 經昌ＩＯＴ on 2024/10/29.
 //
 public struct CameraModel {
-    var key: String = ""
-    var type: String = ""
-    var ip: String = ""
-    var port: String = ""
-    var title: String = ""
-    var username: String = ""
-    var password: String = ""
-    var location: String = ""
-    var channel: String = ""
-    var bindGarageGroup: String = ""
+    public var key: String = ""
+    public var type: String = ""
+    public var ip: String = ""
+    public var port: String = ""
+    public var title: String = ""
+    public var username: String = ""
+    public var password: String = ""
+    public var location: String = ""
+    public var channel: String = ""
+    public var bindGarageGroup: String = ""
     
     init(_ key: String? = nil, _ type: String? = nil, _ ip: String? = nil, _ port: String? = nil, _ title: String? = nil, _ username: String? = nil, _ password: String? = nil, _ location: String? = nil, _ channel: String? = nil, _ bindGarageGroup: String? = nil) {
         self.key = key ?? ""
