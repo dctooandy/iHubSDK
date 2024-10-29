@@ -42,5 +42,5 @@ Pod::Spec.new do |spec|
   spec.dependency "RxGesture"
   spec.dependency "RxUIAlert"
 
-  spec.swift_versions = ['5.0', '5.1', '5.2', '5.3', '5.4', '5.5']
+  spec.swift_versions = '5.0'
 end
