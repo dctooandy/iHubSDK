@@ -115,25 +115,6 @@
 				145A1A852CD06BE200216FDC /* CameraModel.swift */,
 				145A1A872CD06C3F00216FDC /* CameraDeviceInfoModel.swift */,
 				145A1A892CD06D1A00216FDC /* CameraObject.swift */,
-			);
-			path = Camera;
-			sourceTree = "<group>";
-		};
-		145A1A942CD0929A00216FDC /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				14647BC22CCA289100A7124A /* Extension_String.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		14647BCA2CCA289100A7124A /* iHubSDK */ = {
-			isa = PBXGroup;
-			children = (
-				145A1A942CD0929A00216FDC /* Extension */,
-				145A1A932CD0928B00216FDC /* Camera */,
-				14647BC72CCA289100A7124A /* iHubLanguageManager.swift */,
->>>>>>> main
 				14647BC82CCA289100A7124A /* iHubSDK.h */,
 				14647BC92CCA289100A7124A /* iHubSDK.docc */,
 			);
