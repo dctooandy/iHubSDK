@@ -32,15 +32,13 @@ post_install do |installer|
       config.build_settings['ENABLE_BITCODE'] = 'NO'
       config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
       
-      # 架構設定
-      config.build_settings['VALID_ARCHS'] = 'arm64 x86_64'
-      config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = ''
-      
+      # 關鍵設定：排除模擬器架構
+      config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64 x86_64'
+      # 其他基本設定
+      config.build_settings['VALID_ARCHS'] = 'arm64'
+      config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
       # 確保正確的部署目標
       config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
-      
-      # 如果在 M1/M2 Mac 上建構
-      config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
     end
   end
 end

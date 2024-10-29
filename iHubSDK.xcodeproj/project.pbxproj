@@ -22,6 +22,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		10036F557486260B79BDADD9 /* Pods_iHubSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B0A7781C0A8D2DC2320C81 /* Pods_iHubSDK.framework */; };
 		145A1A7F2CD0678500216FDC /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145A1A7E2CD0678500216FDC /* CameraManager.swift */; };
 		145A1A862CD06BE200216FDC /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145A1A852CD06BE200216FDC /* CameraModel.swift */; };
 		145A1A882CD06C3F00216FDC /* CameraDeviceInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145A1A872CD06C3F00216FDC /* CameraDeviceInfoModel.swift */; };
@@ -38,7 +39,6 @@
 		14647BDA2CCA2C2E00A7124A /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 14647BD62CCA2BE900A7124A /* libz.1.2.5.tbd */; };
 		14647BDC2CCA2CBB00A7124A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14647BDB2CCA2CBB00A7124A /* SystemConfiguration.framework */; };
 		14647BDE2CCA2CC200A7124A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14647BDD2CCA2CC200A7124A /* MobileCoreServices.framework */; };
-		D81BA51849445A9B262F6C15 /* Pods_iHubSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7A66C9C4D5926EF0524193 /* Pods_iHubSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +66,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0195B045C3818AD9A99339D0 /* Pods-iHubSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHubSDK.debug.xcconfig"; path = "Target Support Files/Pods-iHubSDK/Pods-iHubSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		145A1A7E2CD0678500216FDC /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		145A1A852CD06BE200216FDC /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
 		145A1A872CD06C3F00216FDC /* CameraDeviceInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraDeviceInfoModel.swift; sourceTree = "<group>"; };
@@ -83,8 +82,9 @@
 		14647BDB2CCA2CBB00A7124A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		14647BDD2CCA2CC200A7124A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/iOSSupport/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		1468A4F82CC87FE10095A8FA /* iHubSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iHubSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F66F3EC02953297093A34E83 /* Pods-iHubSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHubSDK.release.xcconfig"; path = "Target Support Files/Pods-iHubSDK/Pods-iHubSDK.release.xcconfig"; sourceTree = "<group>"; };
-		FC7A66C9C4D5926EF0524193 /* Pods_iHubSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iHubSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44B0A7781C0A8D2DC2320C81 /* Pods_iHubSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iHubSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90360AE40674FF63BB389B60 /* Pods-iHubSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHubSDK.release.xcconfig"; path = "Target Support Files/Pods-iHubSDK/Pods-iHubSDK.release.xcconfig"; sourceTree = "<group>"; };
+		9F97403A86E909CB1A53EA9C /* Pods-iHubSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHubSDK.debug.xcconfig"; path = "Target Support Files/Pods-iHubSDK/Pods-iHubSDK.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,7 @@
 				14647BD82CCA2C1900A7124A /* libbz2.tbd in Frameworks */,
 				14647BD72CCA2C0A00A7124A /* libz.tbd in Frameworks */,
 				145A1A902CD0803D00216FDC /* videoSDK.framework in Frameworks */,
-				D81BA51849445A9B262F6C15 /* Pods_iHubSDK.framework in Frameworks */,
+				10036F557486260B79BDADD9 /* Pods_iHubSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,7 +165,7 @@
 				14647BD42CCA2BC600A7124A /* libiconv.tbd */,
 				14647BD32CCA2BB300A7124A /* libbz2.tbd */,
 				145A1A8B2CD0712600216FDC /* videoSDK.framework */,
-				FC7A66C9C4D5926EF0524193 /* Pods_iHubSDK.framework */,
+				44B0A7781C0A8D2DC2320C81 /* Pods_iHubSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -173,8 +173,8 @@
 		ECF86B1DA6C29720CE9F1BBD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0195B045C3818AD9A99339D0 /* Pods-iHubSDK.debug.xcconfig */,
-				F66F3EC02953297093A34E83 /* Pods-iHubSDK.release.xcconfig */,
+				9F97403A86E909CB1A53EA9C /* Pods-iHubSDK.debug.xcconfig */,
+				90360AE40674FF63BB389B60 /* Pods-iHubSDK.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -197,7 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1468A5002CC87FE10095A8FA /* Build configuration list for PBXNativeTarget "iHubSDK" */;
 			buildPhases = (
-				497CD2A807C463E4A9D56941 /* [CP] Check Pods Manifest.lock */,
+				7192B7062A36B64535E87014 /* [CP] Check Pods Manifest.lock */,
 				1468A4F32CC87FE10095A8FA /* Headers */,
 				1468A4F42CC87FE10095A8FA /* Sources */,
 				1468A4F52CC87FE10095A8FA /* Frameworks */,
@@ -277,7 +277,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# 設置變量\nFRAMEWORK_NAME=\"iHubSDK\"\nSIMULATOR_ARCHIVE_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework\"\nDEVICE_ARCHIVE_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\"\nOUTPUT_PATH=\"./Output/${FRAMEWORK_NAME}.xcframework\"\n\n# 創建 XCFramework\nxcodebuild -create-xcframework \\\n    -framework \"${SIMULATOR_ARCHIVE_PATH}\" \\\n    -framework \"${DEVICE_ARCHIVE_PATH}\" \\\n    -output \"${OUTPUT_PATH}\"\n";
 		};
-		497CD2A807C463E4A9D56941 /* [CP] Check Pods Manifest.lock */ = {
+		7192B7062A36B64535E87014 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -329,7 +329,7 @@
 /* Begin XCBuildConfiguration section */
 		1468A5012CC87FE10095A8FA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0195B045C3818AD9A99339D0 /* Pods-iHubSDK.debug.xcconfig */;
+			baseConfigurationReference = 9F97403A86E909CB1A53EA9C /* Pods-iHubSDK.debug.xcconfig */;
 			buildSettings = {
 				BITCODE_GENRATION_MODE = bitcode;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
@@ -342,6 +342,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iHubSDK",
@@ -381,7 +382,7 @@
 					"$(SRCROOT)/videoSDK.framework",
 				);
 				MACH_O_TYPE = staticlib;
-				MARKETING_VERSION = 1.0.29;
+				MARKETING_VERSION = 1.0.31;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				OTHER_LDFLAGS = (
@@ -401,7 +402,7 @@
 		};
 		1468A5022CC87FE10095A8FA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F66F3EC02953297093A34E83 /* Pods-iHubSDK.release.xcconfig */;
+			baseConfigurationReference = 90360AE40674FF63BB389B60 /* Pods-iHubSDK.release.xcconfig */;
 			buildSettings = {
 				BITCODE_GENRATION_MODE = bitcode;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
@@ -414,6 +415,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iHubSDK",
@@ -453,7 +455,7 @@
 					"$(SRCROOT)/videoSDK.framework",
 				);
 				MACH_O_TYPE = staticlib;
-				MARKETING_VERSION = 1.0.29;
+				MARKETING_VERSION = 1.0.31;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				OTHER_LDFLAGS = (
@@ -528,7 +530,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = "";
-				MARKETING_VERSION = 1.0.29;
+				MARKETING_VERSION = 1.0.31;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -591,7 +593,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = "";
-				MARKETING_VERSION = 1.0.29;
+				MARKETING_VERSION = 1.0.31;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
