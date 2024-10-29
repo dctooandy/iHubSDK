@@ -17,10 +17,30 @@ target 'iHubSDK' do
 
 end
 
+# post_install do |installer|
+#   installer.pods_project.targets.each do |target|
+#     target.build_configurations.each do |config|
+#       config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+#     end
+#   end
+# end
+# 重要：新增 post_install hook
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
-      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+      # 基本設定
+      config.build_settings['ENABLE_BITCODE'] = 'NO'
+      config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+      
+      # 架構設定
+      config.build_settings['VALID_ARCHS'] = 'arm64 x86_64'
+      config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = ''
+      
+      # 確保正確的部署目標
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+      
+      # 如果在 M1/M2 Mac 上建構
+      config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
     end
   end
 end
