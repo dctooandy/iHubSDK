@@ -66,7 +66,7 @@ extension Bundle {
         bundles[language] = bundle
     }
     
-    class AnyLanguageBundle: Bundle {
+    class AnyLanguageBundle: Bundle, @unchecked Sendable {
         override func localizedString(forKey key: String, value: String?, table tableName: String?) -> String {
             if let bundle = Bundle.bundles[iHubLanguageManager.shared.currentLanguage] {
                 return bundle.localizedString(forKey: key, value: value, table: tableName)
