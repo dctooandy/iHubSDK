@@ -9,6 +9,8 @@ target 'iHubSDK' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'RxDataSources'
+  pod 'RealmSwift', '~> 10.46.0'
+  pod 'RxRealm', :git => 'https://github.com/jopache/RxRealm.git'
   pod 'RxAlamofire'
   pod 'RxGesture'
   pod 'RxUIAlert'
