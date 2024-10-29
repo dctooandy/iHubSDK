@@ -1,11 +1,11 @@
 PODS:
   - Alamofire (5.10.1)
   - Differentiator (5.0.0)
-  - Realm (10.44.0):
-    - Realm/Headers (= 10.44.0)
-  - Realm/Headers (10.44.0)
-  - RealmSwift (10.44.0):
-    - Realm (= 10.44.0)
+  - Realm (20.0.0):
+    - Realm/Headers (= 20.0.0)
+  - Realm/Headers (20.0.0)
+  - RealmSwift (20.0.0):
+    - Realm (= 20.0.0)
   - RxAlamofire (6.1.1):
     - RxAlamofire/Core (= 6.1.1)
   - RxAlamofire/Core (6.1.1):
@@ -21,11 +21,6 @@ PODS:
   - RxGesture (4.0.4):
     - RxCocoa (~> 6.0)
     - RxSwift (~> 6.0)
-  - RxRealm (5.0.4):
-    - Realm (~> 10.21)
-    - RealmSwift (~> 10.21)
-    - RxCocoa (~> 6.1)
-    - RxSwift (~> 6.1)
   - RxRelay (6.8.0):
     - RxSwift (= 6.8.0)
   - RxSwift (6.8.0)
@@ -34,12 +29,11 @@ PODS:
     - RxSwift
 
 DEPENDENCIES:
-  - RealmSwift (~> 10.44.0)
+  - RealmSwift
   - RxAlamofire
   - RxCocoa
   - RxDataSources
   - RxGesture
-  - RxRealm
   - RxSwift
   - RxUIAlert
 
@@ -53,7 +47,6 @@ SPEC REPOS:
     - RxCocoa
     - RxDataSources
     - RxGesture
-    - RxRealm
     - RxRelay
     - RxSwift
     - RxUIAlert
@@ -61,17 +54,16 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 840d2a1ad82355b536ec6ba5f97e5bfa54600ca3
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
-  Realm: 0419a32457873acb720df25bf1d658df36967cf2
-  RealmSwift: 352f85c018b4d0efe961974bfa95bf7a30e079f6
+  Realm: a799b5f9145623fb0bfe149fe81422863631dd0f
+  RealmSwift: f8c4354ebd5053343e6ab9f4eda244145308a51e
   RxAlamofire: beb75a1c452d0de225651db4903f5d29d034a620
   RxCocoa: 2d33c1e1e5d66492052ad46b11024ae287572880
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
   RxGesture: f3efb47ed2d26a8082f7b660d4a59970e275a7f8
-  RxRealm: 666c8785327fe2fff972a3093b35dc7055c1ca38
   RxRelay: 335c78b926a2aea8d863a6d25f1ed3b5ad8e8705
   RxSwift: 4e28be97cbcfeee614af26d83415febbf2bf6f45
   RxUIAlert: 315f87b14166c37a37b6bb32220b9f42090ab5ca
 
-PODFILE CHECKSUM: fb3d80e6d08f773636e4f9e86bc3a0f4b03db24d
+PODFILE CHECKSUM: 7859c3f559aebe295790b7a7845618b5d57fc44e
 
 COCOAPODS: 1.15.2
