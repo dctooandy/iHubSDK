@@ -41,9 +41,10 @@ enum ConnectCameraErrors: Codable {
 public class CameraManager {
     // property
     static let shared = CameraManager()
-    private var nodeDic: [String: ConnectNode] = [:]
     private var nodeModelDic: [String: CameraModel] = [:]
     public var onRefreshNode: (() -> Void)?
+#if !targetEnvironment(simulator)
+    private var nodeDic: [String: ConnectNode] = [:]
     // func
     private init() {
         self.getCameraAll()
@@ -91,21 +92,21 @@ public class CameraManager {
     }
     
     func getCameraAll() {
-//        self.cameraAllDataDisposeBag = DisposeBag()
-//        
-//        self.cameraController.getAll()
-//            .observe(on: MainScheduler.instance)
-//            .subscribe(onNext: { models in
-//                for model in models {
-//                    self.initAndConnectWithModel(model) { _, _ in }
-//                }
-//            })
-//            .disposed(by: self.cameraAllDataDisposeBag)
+        //        self.cameraAllDataDisposeBag = DisposeBag()
+        //
+        //        self.cameraController.getAll()
+        //            .observe(on: MainScheduler.instance)
+        //            .subscribe(onNext: { models in
+        //                for model in models {
+        //                    self.initAndConnectWithModel(model) { _, _ in }
+        //                }
+        //            })
+        //            .disposed(by: self.cameraAllDataDisposeBag)
     }
     
     public func initAndConnectWithModel(_ model: CameraModel, completion: @escaping (NSInteger, ConnectNode?) -> Void) {
         let dispatchGroup = DispatchGroup()
-
+        
         dispatchGroup.enter()
         DispatchQueue.main.async {
             self.cameraNodeInit(model.key) {
@@ -214,4 +215,8 @@ public class CameraManager {
         }
         return "0" // 預設值
     }
+#else
+    
+#endif
+
 }

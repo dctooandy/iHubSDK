@@ -9,7 +9,9 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author             = { "AndyChen" => "rd-sw18@visionsecurity.com.tw" }
 
+
   spec.ios.deployment_target = "13.0"
+  spec.platform = :ios, '13.0'
   # spec.osx.deployment_target = "10.13"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
@@ -17,7 +19,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/dctooandy/iHubSDK.git", :tag => "#{spec.version}" }
 
-  spec.source_files  = "iHubSDK/**/*.{h,swift}"
+  spec.source_files  = "iHubSDK/*.{h,swift}"
 
   # spec.prepare_command = <<-CMD
   #  mkdir -p ./iHubSDK/Frameworks/
@@ -42,5 +44,6 @@ Pod::Spec.new do |spec|
   spec.dependency "RxGesture"
   spec.dependency "RxUIAlert"
 
-  spec.swift_versions = '5.0'
+  spec.swift_versions = ['5.0', '5.1', '5.2', '5.3', '5.4', '5.5']
+
 end
