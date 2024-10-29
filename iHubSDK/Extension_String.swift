@@ -6,7 +6,7 @@
 //
 
 public extension String {
-    public func localized(comment: String = "") -> String {
+    func localized(comment: String = "") -> String {
         let defaultLanguage = Bundle.main.preferredLocalizations.first ?? "en"
         let language = UserDefaults.standard.string(forKey: "AppLanguage") ?? defaultLanguage
         
@@ -20,7 +20,7 @@ public extension String {
         return NSLocalizedString(self, tableName: nil, bundle: bundle, value: "", comment: comment)
     }
     
-    public func localized(with variables: [CVarArg]) -> String {
+    func localized(with variables: [CVarArg]) -> String {
         let defaultLanguage = Bundle.main.preferredLocalizations.first ?? "en"
         let language = UserDefaults.standard.string(forKey: "AppLanguage") ?? defaultLanguage
         
