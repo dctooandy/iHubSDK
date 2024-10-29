@@ -40,7 +40,7 @@ enum ConnectCameraErrors: Codable {
 
 public class CameraManager {
     // property
-    static let shared = CameraManager()
+    public static let shared = CameraManager()
     private var nodeModelDic: [String: CameraModel] = [:]
     public var onRefreshNode: (() -> Void)?
 #if !targetEnvironment(simulator)
