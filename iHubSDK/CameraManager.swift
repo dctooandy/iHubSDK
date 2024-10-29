@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 
 
-enum ConnectCameraErrors: Codable {
+public enum ConnectCameraErrors: Codable {
     case notInitializing(NSInteger)
     case informationNotComplete(NSInteger)
     case authenticationOfIPCamWrong(NSInteger)
@@ -50,7 +50,7 @@ public class CameraManager {
         self.getCameraAll()
     }
     
-    func cameraNodeInit(_ key: String, completion: @escaping () -> Void) {
+    public func cameraNodeInit(_ key: String, completion: @escaping () -> Void) {
         if !self.nodeDic.keys.contains(key) {
             let cameraNode = ConnectNode()
             let deviceInitializeFlag = cameraNode.initialize(1)
@@ -72,19 +72,19 @@ public class CameraManager {
         }
     }
     
-    func addCameraModel(_ key: String, model: CameraModel) {
+    public func addCameraModel(_ key: String, model: CameraModel) {
         nodeModelDic[key] = model
     }
     
-    func getNode(_ key: String) -> ConnectNode? {
+    public func getNode(_ key: String) -> ConnectNode? {
         return nodeDic[key]
     }
     
-    func getModel(_ key: String) -> CameraModel? {
+    public func getModel(_ key: String) -> CameraModel? {
         return nodeModelDic[key]
     }
     
-    func refreshNode() {
+    public func refreshNode() {
         self.onRefreshNode?()
         self.nodeDic.removeAll()
         self.nodeModelDic.removeAll()
@@ -120,7 +120,7 @@ public class CameraManager {
         }
     }
     
-    func connectNodeByModel(_ model: CameraModel, completion: @escaping (NSInteger, ConnectNode?) -> Void) {
+    public func connectNodeByModel(_ model: CameraModel, completion: @escaping (NSInteger, ConnectNode?) -> Void) {
         var deviceInfo: [String: Any] = [
             "name": model.title,
             "user": model.username,
@@ -148,7 +148,7 @@ public class CameraManager {
         }
     }
     
-    func fetchConnectCameraError(_ connectFlag: NSInteger) -> ConnectCameraErrors {
+    public func fetchConnectCameraError(_ connectFlag: NSInteger) -> ConnectCameraErrors {
         var error = ConnectCameraErrors.defaultError(connectFlag)
         switch connectFlag {
         case -3:
@@ -178,7 +178,7 @@ public class CameraManager {
         return error
     }
     
-    func getDeviceInfo(_ key: String) -> CameraDeviceInfoModel? {
+    public func getDeviceInfo(_ key: String) -> CameraDeviceInfoModel? {
         if let node = self.getNode(key) {
             let deviceInfo = node.getDeviceInfo()
             guard let dictionary = deviceInfo as? [String: Any] else {

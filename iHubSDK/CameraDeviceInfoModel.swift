@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct CameraDeviceInfoModel {
+public struct CameraDeviceInfoModel {
     var user: String = ""
     var p2pAccount: String = ""
     var isHttps: String = ""
