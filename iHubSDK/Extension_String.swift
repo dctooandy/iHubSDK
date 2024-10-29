@@ -5,7 +5,7 @@
 //  Created by 經昌ＩＯＴ on 2024/10/24.
 //
 
-extension String {
+public extension String {
     func localized(comment: String = "") -> String {
         let defaultLanguage = Bundle.main.preferredLocalizations.first ?? "en"
         let language = UserDefaults.standard.string(forKey: "AppLanguage") ?? defaultLanguage

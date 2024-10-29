@@ -109,10 +109,6 @@
 		145A1A842CD06BBF00216FDC /* Camera */ = {
 			isa = PBXGroup;
 			children = (
-				145A1A7E2CD0678500216FDC /* CameraManager.swift */,
-				145A1A852CD06BE200216FDC /* CameraModel.swift */,
-				145A1A872CD06C3F00216FDC /* CameraDeviceInfoModel.swift */,
-				145A1A892CD06D1A00216FDC /* CameraObject.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -120,7 +116,6 @@
 		14647BC42CCA289100A7124A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				14647BC22CCA289100A7124A /* Extension_String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -131,6 +126,11 @@
 				14647BC42CCA289100A7124A /* Extensions */,
 				145A1A842CD06BBF00216FDC /* Camera */,
 				14647BC72CCA289100A7124A /* iHubLanguageManager.swift */,
+				145A1A7E2CD0678500216FDC /* CameraManager.swift */,
+				145A1A852CD06BE200216FDC /* CameraModel.swift */,
+				145A1A872CD06C3F00216FDC /* CameraDeviceInfoModel.swift */,
+				145A1A892CD06D1A00216FDC /* CameraObject.swift */,
+				14647BC22CCA289100A7124A /* Extension_String.swift */,
 				14647BC82CCA289100A7124A /* iHubSDK.h */,
 				14647BC92CCA289100A7124A /* iHubSDK.docc */,
 			);
@@ -381,7 +381,7 @@
 					"$(SRCROOT)/videoSDK.framework",
 				);
 				MACH_O_TYPE = staticlib;
-				MARKETING_VERSION = 1.0.19;
+				MARKETING_VERSION = 1.0.21;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				OTHER_LDFLAGS = (
@@ -453,7 +453,7 @@
 					"$(SRCROOT)/videoSDK.framework",
 				);
 				MACH_O_TYPE = staticlib;
-				MARKETING_VERSION = 1.0.19;
+				MARKETING_VERSION = 1.0.21;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				OTHER_LDFLAGS = (
@@ -528,7 +528,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = "";
-				MARKETING_VERSION = 1.0.19;
+				MARKETING_VERSION = 1.0.21;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -591,7 +591,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = "";
-				MARKETING_VERSION = 1.0.19;
+				MARKETING_VERSION = 1.0.21;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
