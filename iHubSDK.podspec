@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "iHubSDK"
-  spec.version      = "1.0.19"
+  spec.version      = "1.0.33"
   spec.summary      = "iHubSDK 是專為Ihub設計的SDK"
   spec.description  = "內容為語言設置等功能,主要為開發使用的模組化檔案,避免重工."
   spec.homepage     = "https://github.com/dctooandy/iHubSDK"
@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/dctooandy/iHubSDK.git", :tag => "#{spec.version}" }
 
-  spec.source_files  = "iHubSDK/*.{h,swift}"
+  spec.source_files  = "iHubSDK/**/*.{h,swift}"
 
   # spec.prepare_command = <<-CMD
   #  mkdir -p ./iHubSDK/Frameworks/
@@ -42,5 +42,5 @@ Pod::Spec.new do |spec|
   spec.dependency "RxGesture"
   spec.dependency "RxUIAlert"
 
-  spec.swift_versions = ['5.0', '5.1', '5.2', '5.3', '5.4', '5.5']
+  spec.swift_versions = '5.0'
 end
