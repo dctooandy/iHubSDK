@@ -48,7 +48,7 @@ public class iHubLanguageManager {
 }
 
 extension Bundle {
-    static var mySDK: Bundle {
+    public static var mySDK: Bundle {
         return Bundle(for: iHubLanguageManager.self)
     }
     private static var bundles: [String: Bundle] = [:]
