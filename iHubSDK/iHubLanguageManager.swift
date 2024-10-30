@@ -48,6 +48,19 @@ public class iHubLanguageManager {
 }
 
 extension Bundle {
+    
+    public static var sdkBundle: Bundle? {
+            // 獲取 framework bundle
+            let frameworkBundle = Bundle(for: iHubLanguageManager.self)
+            
+            // 獲取 resource bundle
+            if let bundlePath = frameworkBundle.path(forResource: "iHubSDK", ofType: "bundle"),
+               let resourceBundle = Bundle(path: bundlePath) {
+                return resourceBundle
+            }
+            return nil
+        }
+    
     public static var mySDK: Bundle {
         return Bundle(for: iHubLanguageManager.self)
     }
