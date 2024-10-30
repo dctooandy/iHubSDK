@@ -23,12 +23,6 @@
 
 /* Begin PBXBuildFile section */
 		10036F557486260B79BDADD9 /* Pods_iHubSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B0A7781C0A8D2DC2320C81 /* Pods_iHubSDK.framework */; };
-		145A1A7F2CD0678500216FDC /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145A1A7E2CD0678500216FDC /* CameraManager.swift */; };
-		145A1A862CD06BE200216FDC /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145A1A852CD06BE200216FDC /* CameraModel.swift */; };
-		145A1A882CD06C3F00216FDC /* CameraDeviceInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145A1A872CD06C3F00216FDC /* CameraDeviceInfoModel.swift */; };
-		145A1A8A2CD06D1A00216FDC /* CameraObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145A1A892CD06D1A00216FDC /* CameraObject.swift */; };
-		1461C98E2CD1B4AE0051DB0D /* videoSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 145A1A8B2CD0712600216FDC /* videoSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1461C98F2CD1B4BF0051DB0D /* videoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145A1A8B2CD0712600216FDC /* videoSDK.framework */; };
 		14647BCC2CCA289100A7124A /* Extension_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14647BC22CCA289100A7124A /* Extension_String.swift */; };
 		14647BCE2CCA289100A7124A /* iHubLanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14647BC72CCA289100A7124A /* iHubLanguageManager.swift */; };
 		14647BCF2CCA289100A7124A /* iHubSDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = 14647BC92CCA289100A7124A /* iHubSDK.docc */; };
@@ -52,7 +46,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1461C98E2CD1B4AE0051DB0D /* videoSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,21 +53,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		145A1A7E2CD0678500216FDC /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
-		145A1A852CD06BE200216FDC /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
-		145A1A872CD06C3F00216FDC /* CameraDeviceInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraDeviceInfoModel.swift; sourceTree = "<group>"; };
-		145A1A892CD06D1A00216FDC /* CameraObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraObject.swift; sourceTree = "<group>"; };
-		145A1A8B2CD0712600216FDC /* videoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = videoSDK.framework; sourceTree = "<group>"; };
 		14647BC22CCA289100A7124A /* Extension_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_String.swift; sourceTree = "<group>"; };
 		14647BC72CCA289100A7124A /* iHubLanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iHubLanguageManager.swift; sourceTree = "<group>"; };
 		14647BC82CCA289100A7124A /* iHubSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iHubSDK.h; sourceTree = "<group>"; };
 		14647BC92CCA289100A7124A /* iHubSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = iHubSDK.docc; sourceTree = "<group>"; };
-		14647BD32CCA2BB300A7124A /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib/libbz2.tbd; sourceTree = DEVELOPER_DIR; };
-		14647BD42CCA2BC600A7124A /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib/libiconv.tbd; sourceTree = DEVELOPER_DIR; };
-		14647BD52CCA2BDE00A7124A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
-		14647BD62CCA2BE900A7124A /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib/libz.1.2.5.tbd; sourceTree = DEVELOPER_DIR; };
-		14647BDB2CCA2CBB00A7124A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		14647BDD2CCA2CC200A7124A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/iOSSupport/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		1468A4F82CC87FE10095A8FA /* iHubSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iHubSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B0A7781C0A8D2DC2320C81 /* Pods_iHubSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iHubSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90360AE40674FF63BB389B60 /* Pods-iHubSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHubSDK.release.xcconfig"; path = "Target Support Files/Pods-iHubSDK/Pods-iHubSDK.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,7 +68,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1461C98F2CD1B4BF0051DB0D /* videoSDK.framework in Frameworks */,
 				10036F557486260B79BDADD9 /* Pods_iHubSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,10 +80,6 @@
 			children = (
 				14647BC22CCA289100A7124A /* Extension_String.swift */,
 				14647BC72CCA289100A7124A /* iHubLanguageManager.swift */,
-				145A1A7E2CD0678500216FDC /* CameraManager.swift */,
-				145A1A852CD06BE200216FDC /* CameraModel.swift */,
-				145A1A872CD06C3F00216FDC /* CameraDeviceInfoModel.swift */,
-				145A1A892CD06D1A00216FDC /* CameraObject.swift */,
 				14647BC82CCA289100A7124A /* iHubSDK.h */,
 				14647BC92CCA289100A7124A /* iHubSDK.docc */,
 			);
@@ -130,13 +107,6 @@
 		C0169AF76451C5F6B28352A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				14647BDD2CCA2CC200A7124A /* MobileCoreServices.framework */,
-				14647BDB2CCA2CBB00A7124A /* SystemConfiguration.framework */,
-				14647BD62CCA2BE900A7124A /* libz.1.2.5.tbd */,
-				14647BD52CCA2BDE00A7124A /* libz.tbd */,
-				14647BD42CCA2BC600A7124A /* libiconv.tbd */,
-				14647BD32CCA2BB300A7124A /* libbz2.tbd */,
-				145A1A8B2CD0712600216FDC /* videoSDK.framework */,
 				44B0A7781C0A8D2DC2320C81 /* Pods_iHubSDK.framework */,
 			);
 			name = Frameworks;
@@ -280,10 +250,6 @@
 			files = (
 				14647BCC2CCA289100A7124A /* Extension_String.swift in Sources */,
 				14647BCE2CCA289100A7124A /* iHubLanguageManager.swift in Sources */,
-				145A1A882CD06C3F00216FDC /* CameraDeviceInfoModel.swift in Sources */,
-				145A1A8A2CD06D1A00216FDC /* CameraObject.swift in Sources */,
-				145A1A862CD06BE200216FDC /* CameraModel.swift in Sources */,
-				145A1A7F2CD0678500216FDC /* CameraManager.swift in Sources */,
 				14647BCF2CCA289100A7124A /* iHubSDK.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,7 +320,7 @@
 					"$(SRCROOT)/videoSDK.framework",
 				);
 				MACH_O_TYPE = staticlib;
-				MARKETING_VERSION = 1.0.55;
+				MARKETING_VERSION = 1.0.57;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				OTHER_LDFLAGS = "-ObjC";
@@ -424,7 +390,7 @@
 					"$(SRCROOT)/videoSDK.framework",
 				);
 				MACH_O_TYPE = staticlib;
-				MARKETING_VERSION = 1.0.55;
+				MARKETING_VERSION = 1.0.57;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				OTHER_LDFLAGS = "-ObjC";
@@ -497,7 +463,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = "";
-				MARKETING_VERSION = 1.0.55;
+				MARKETING_VERSION = 1.0.57;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -561,7 +527,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = "";
-				MARKETING_VERSION = 1.0.55;
+				MARKETING_VERSION = 1.0.57;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
