@@ -94,18 +94,54 @@ extension Bundle {
     }
     
     public static func checkLocalizationFiles() {
-            let bundle = Bundle(for: iHubLanguageManager.self)
-            
-            print("Available Localizations:", bundle.localizations)
-            print("Preferred Localizations:", bundle.preferredLocalizations)
-            
-            // 檢查特定語言
-            for language in ["en", "zh-Hant"] {
-                if let path = bundle.path(forResource: language, ofType: "lproj") {
-                    print("\(language) path found:", path)
-                } else {
-                    print("\(language) path not found")
-                }
+        let bundle = Bundle(for: iHubLanguageManager.self)
+        
+        print("Available Localizations:", bundle.localizations)
+        print("Preferred Localizations:", bundle.preferredLocalizations)
+        
+        // 檢查特定語言
+        for language in ["en", "zh-Hant"] {
+            if let path = bundle.path(forResource: language, ofType: "lproj") {
+                print("\(language) path found:", path)
+            } else {
+                print("\(language) path not found")
             }
         }
+    }
+    public static func debugBundles() {
+        // 1. 檢查主 bundle
+        let mainBundle = Bundle(for: iHubLanguageManager.self)
+        print("=== Main Bundle ===")
+        print("Path:", mainBundle.bundlePath)
+        
+        // 2. 檢查資源目錄
+        if let resourcePath = mainBundle.resourcePath {
+            do {
+                let contents = try FileManager.default.contentsOfDirectory(atPath: resourcePath)
+                print("Resource contents:", contents)
+                
+                // 3. 如果找到 iHubSDK.bundle，檢查其內容
+                if let bundlePath = mainBundle.path(forResource: "iHubSDK", ofType: "bundle") {
+                    print("\n=== iHubSDK.bundle ===")
+                    print("Bundle path:", bundlePath)
+                    
+                    let bundleContents = try FileManager.default.contentsOfDirectory(atPath: bundlePath)
+                    print("Bundle contents:", bundleContents)
+                    
+                    // 4. 檢查本地化文件
+                    for language in ["en", "zh-Hant"] {
+                        if let lprojPath = Bundle(path: bundlePath)?.path(forResource: language, ofType: "lproj") {
+                            print("\(language).lproj found at:", lprojPath)
+                            
+                            // 檢查 .lproj 內容
+                            let lprojContents = try FileManager.default.contentsOfDirectory(atPath: lprojPath)
+                            print("\(language).lproj contents:", lprojContents)
+                        }
+                    }
+                }
+            } catch {
+                print("Error:", error)
+            }
+        }
+    }
 }

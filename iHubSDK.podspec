@@ -22,8 +22,11 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/dctooandy/iHubSDK.git", :tag => "#{spec.version}" }
 
   spec.source_files  = "iHubSDK/**/*.{h,m,swift}"
+  # 確保包含本地化文件
+  spec.resources = ['iHubSDK/Resources/**/*.strings']
+  # 或者使用
   spec.resource_bundles = {
-    'iHubSDK' => ['Resources/*.lproj/*']
+    'iHubSDK' => ['iHubSDK/Resources/*.lproj']
   }
 
   # spec.prepare_command = <<-CMD
