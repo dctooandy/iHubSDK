@@ -6,12 +6,14 @@
 //
 
 public extension String {
+    
     func localized(comment: String = "") -> String {
-        let defaultLanguage = Bundle.main.preferredLocalizations.first ?? "en"
+        
+        let defaultLanguage = Bundle.mySDK.preferredLocalizations.first ?? "en"
         let language = UserDefaults.standard.string(forKey: "AppLanguage") ?? defaultLanguage
         
         guard
-            let path = Bundle.main.path(forResource: language, ofType: "lproj"),
+            let path = Bundle.mySDK.path(forResource: language, ofType: "lproj"),
             let bundle = Bundle(path: path)
         else {
             return NSLocalizedString(self, comment: comment)
@@ -21,11 +23,11 @@ public extension String {
     }
     
     func localized(with variables: [CVarArg]) -> String {
-        let defaultLanguage = Bundle.main.preferredLocalizations.first ?? "en"
+        let defaultLanguage = Bundle.mySDK.preferredLocalizations.first ?? "en"
         let language = UserDefaults.standard.string(forKey: "AppLanguage") ?? defaultLanguage
         
         guard
-            let path = Bundle.main.path(forResource: language, ofType: "lproj"),
+            let path = Bundle.mySDK.path(forResource: language, ofType: "lproj"),
             let bundle = Bundle(path: path)
         else {
             return String(format: NSLocalizedString(self, comment: ""), arguments: variables)
