@@ -75,7 +75,7 @@ extension Bundle {
         }
     }
     
-    static func printBundleInfo() {
+    public static func printBundleInfo() {
         let bundle = Bundle(for: iHubLanguageManager.self)
         print("Bundle:", bundle)
         print("Bundle URL:", bundle.bundleURL)
@@ -93,7 +93,7 @@ extension Bundle {
         }
     }
     
-    static func checkLocalizationFiles() {
+    public static func checkLocalizationFiles() {
             let bundle = Bundle(for: iHubLanguageManager.self)
             
             print("Available Localizations:", bundle.localizations)
