@@ -23,6 +23,7 @@
 
 /* Begin PBXBuildFile section */
 		10036F557486260B79BDADD9 /* Pods_iHubSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B0A7781C0A8D2DC2320C81 /* Pods_iHubSDK.framework */; };
+		1461C9942CD2012A0051DB0D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1461C9922CD2011B0051DB0D /* Localizable.strings */; };
 		14647BCC2CCA289100A7124A /* Extension_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14647BC22CCA289100A7124A /* Extension_String.swift */; };
 		14647BCE2CCA289100A7124A /* iHubLanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14647BC72CCA289100A7124A /* iHubLanguageManager.swift */; };
 		14647BCF2CCA289100A7124A /* iHubSDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = 14647BC92CCA289100A7124A /* iHubSDK.docc */; };
@@ -53,6 +54,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1461C9902CD2011B0051DB0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1461C9912CD2011B0051DB0D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		14647BC22CCA289100A7124A /* Extension_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_String.swift; sourceTree = "<group>"; };
 		14647BC72CCA289100A7124A /* iHubLanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iHubLanguageManager.swift; sourceTree = "<group>"; };
 		14647BC82CCA289100A7124A /* iHubSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iHubSDK.h; sourceTree = "<group>"; };
@@ -75,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1461C9932CD2011B0051DB0D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1461C9922CD2011B0051DB0D /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		14647BCA2CCA289100A7124A /* iHubSDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +100,7 @@
 		1468A4EE2CC87FE10095A8FA = {
 			isa = PBXGroup;
 			children = (
+				1461C9932CD2011B0051DB0D /* Resources */,
 				14647BCA2CCA289100A7124A /* iHubSDK */,
 				1468A4F92CC87FE10095A8FA /* Products */,
 				ECF86B1DA6C29720CE9F1BBD /* Pods */,
@@ -179,6 +191,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = 1468A4EE2CC87FE10095A8FA;
 			productRefGroup = 1468A4F92CC87FE10095A8FA /* Products */;
@@ -196,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1461C9942CD2012A0051DB0D /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +278,18 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		1461C9922CD2011B0051DB0D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1461C9902CD2011B0051DB0D /* en */,
+				1461C9912CD2011B0051DB0D /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		1468A5012CC87FE10095A8FA /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -320,7 +346,7 @@
 					"$(SRCROOT)/videoSDK.framework",
 				);
 				MACH_O_TYPE = staticlib;
-				MARKETING_VERSION = 1.0.67;
+				MARKETING_VERSION = 1.0.69;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				OTHER_LDFLAGS = "-ObjC";
@@ -390,7 +416,7 @@
 					"$(SRCROOT)/videoSDK.framework",
 				);
 				MACH_O_TYPE = staticlib;
-				MARKETING_VERSION = 1.0.67;
+				MARKETING_VERSION = 1.0.69;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				OTHER_LDFLAGS = "-ObjC";
@@ -463,7 +489,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = "";
-				MARKETING_VERSION = 1.0.67;
+				MARKETING_VERSION = 1.0.69;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -527,7 +553,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = "";
-				MARKETING_VERSION = 1.0.67;
+				MARKETING_VERSION = 1.0.69;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
