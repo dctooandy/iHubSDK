@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "iHubSDK"
 
-  spec.version      = "1.0.47"
+  spec.version      = "1.0.49"
 
   spec.summary      = "iHubSDK 是專為Ihub設計的SDK"
   spec.description  = "內容為語言設置等功能,主要為開發使用的模組化檔案,避免重工."
@@ -23,14 +23,14 @@ Pod::Spec.new do |spec|
 
   spec.source_files  = "iHubSDK/**/*.{h,m,swift}"
 
-  # spec.prepare_command = <<-CMD
-  #  mkdir -p ./iHubSDK/Frameworks/
-  #  cp -R ./iHubSDK/SDKs/videoSDK.framework ./iHubSDK/Frameworks/
-  #  if [ ! -d "./iHubSDK/Frameworks/videoSDK.framework" ]; then
-  #      echo "Error: videoSDK.framework not found in ./iHubSDK/Frameworks/"
-  #      exit 1
-  #  fi
-  # CMD
+  spec.prepare_command = <<-CMD
+   mkdir -p ./iHubSDK/Frameworks/
+   cp -R ./iHubSDK/SDKs/videoSDK.framework ./iHubSDK/Frameworks/
+   if [ ! -d "./iHubSDK/Frameworks/videoSDK.framework" ]; then
+       echo "Error: videoSDK.framework not found in ./iHubSDK/Frameworks/"
+       exit 1
+   fi
+  CMD
 
   # spec.vendored_frameworks = 'iHubSDK/SDKs/videoSDK.framework'
 
