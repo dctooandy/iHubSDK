@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "iHubSDK"
 
-  spec.version      = "1.0.63"
+  spec.version      = "1.0.65"
 
   spec.summary      = "iHubSDK 是專為Ihub設計的SDK"
   spec.description  = "內容為語言設置等功能,主要為開發使用的模組化檔案,避免重工."

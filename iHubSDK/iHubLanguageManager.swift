@@ -74,4 +74,38 @@ extension Bundle {
             return super.localizedString(forKey: key, value: value, table: tableName)
         }
     }
+    
+    static func printBundleInfo() {
+        let bundle = Bundle(for: iHubLanguageManager.self)
+        print("Bundle:", bundle)
+        print("Bundle URL:", bundle.bundleURL)
+        print("Resource URL:", bundle.resourceURL as Any)
+        print("Localizations:", bundle.localizations)
+        
+        // 列出所有資源
+        if let resourcePath = bundle.resourcePath {
+            do {
+                let contents = try FileManager.default.contentsOfDirectory(atPath: resourcePath)
+                print("Resources:", contents)
+            } catch {
+                print("Error listing resources:", error)
+            }
+        }
+    }
+    
+    static func checkLocalizationFiles() {
+            let bundle = Bundle(for: iHubLanguageManager.self)
+            
+            print("Available Localizations:", bundle.localizations)
+            print("Preferred Localizations:", bundle.preferredLocalizations)
+            
+            // 檢查特定語言
+            for language in ["en", "zh-Hant"] {
+                if let path = bundle.path(forResource: language, ofType: "lproj") {
+                    print("\(language) path found:", path)
+                } else {
+                    print("\(language) path not found")
+                }
+            }
+        }
 }
