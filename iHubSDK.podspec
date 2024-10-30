@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "iHubSDK"
 
-  spec.version      = "1.0.59"
+  spec.version      = "1.0.61"
 
   spec.summary      = "iHubSDK 是專為Ihub設計的SDK"
   spec.description  = "內容為語言設置等功能,主要為開發使用的模組化檔案,避免重工."
@@ -22,6 +22,9 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/dctooandy/iHubSDK.git", :tag => "#{spec.version}" }
 
   spec.source_files  = "iHubSDK/**/*.{h,m,swift}"
+  spec.resource_bundles = {
+    'iHubSDK' => ['Resources/*.lproj/*']
+  }
 
   # spec.prepare_command = <<-CMD
   #  mkdir -p ./iHubSDK/Frameworks/

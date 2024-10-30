@@ -55,10 +55,10 @@ extension Bundle {
     
     public class func setLanguage(_ language: String) {
         defer {
-            object_setClass(Bundle.main, AnyLanguageBundle.self)
+            object_setClass(Bundle.mySDK, AnyLanguageBundle.self)
         }
         
-        guard let path = Bundle.main.path(forResource: language, ofType: "lproj"),
+        guard let path = Bundle.mySDK.path(forResource: language, ofType: "lproj"),
               let bundle = Bundle(path: path) else {
             return
         }
